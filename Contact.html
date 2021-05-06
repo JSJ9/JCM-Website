@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img class="logo-img" src="Images/FinalJCMLogoWithText.png" alt="logo">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="AboutUs.html" class="hover">ABOUT US</a>
+        </li>
+        <li>
+          <a href="Projects.html" class="hover">PROJECTS</a>
+        </li>
+        <li>
+          <a href="Services.html" class="hover">SERVICES</a>
+        </li>
+        <li>
+          <a href="Contact.html" class="hover">CONTACT US</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3">  </div>
+      </div>
+    </nav>
+    <script src="JS/app.js"></script>
+
+    <div class="content">
+    <div class="top-text">
+      <h1>CONTACT US</h1>
+    </div>
+    <div class="content">
+      <div class="iconbox">
+        <div class="blueicons">
+          <img class="icons" src="Images/email.png" alt="email">
+          <div class="vertical-line"></div>
+          <img class="icons" src="Images/phone-call.png" alt="phone">
+          <div class="vertical-line"></div>
+          <img class="icons" src="Images/map-icon.png" alt="map">
+        </div>
+        <div class="textunderimg1">
+          <i class="text-img">info@jcmconstructiondesign.com</i>
+        </div>
+        <div class="textunderimg2">
+          <i class="text-img">469-461-1914</i>
+        </div>
+        <div class="textunderimg3">
+        <i class="text-img">17250 Dallas Pkwy, <br> Dallas, TX 75248</i>
+      </div>
+        <h4 class="headerunderimg1">EMAIL</h4>
+        <h4 class="headerunderimg2">PHONE</h4>
+        <h4 class="headerunderimg3">OFFICE</h4>
+      </div>
+
+      <div class="contactformblock">
+        <h2 class="h21">Need to schedule an estimate or have a question? Fill out the form below.</h2>
+        <form class="Contact-Form-Content" action="contact-form-handler.php" method="POST">
+          <label class="labelContact">NAME</label>
+          <input type="text" name="name" placeholder="Name..." class="form-input">
+          <label class="labelContact">EMAIL</label>
+          <input type="email" name="email" placeholder="Email..." class="form-input">
+          <label class="labelContact">MESSAGE</label>
+          <textarea name="message" row="0" column="0" class="form-input" placeholder="Message..."></textarea>
+          <input type="submit" class="form-submit-button" value="SEND">
+        </form>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.7005871839688!2d-96.82983548481265!3d32.98530038090957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c23fdac8b5ccb%3A0x5b288fd918edadfd!2s17250%20Dallas%20Pkwy%2C%20Dallas%2C%20TX%2075248!5e0!3m2!1sen!2sus!4v1620183574721!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-section about">
+              <img class="footerimage" src="Images/FinalJCMLogoWithText.png" alt="logo">
+              <p>
+                JCM Construction & Design is a residential remodeling company.
+              </p>
+              <br>
+              <div class="contact">
+                <span>
+                  <img class="phone-icon" src="Images/phoneicon.png" alt="phone">
+                  <i class="JCM-Phone">&nbsp;469-461-1914</i>
+                </span>
+                <span>
+                  <br>
+                  <img class="mail-icon" src="Images/mail.png" alt="mail">
+                  <i class="JCM-email">&nbsp;info@jcmconstructiondesign.com</i>
+                </span>
+              </div>
+              <br>
+              <div class="socials">
+                <a href="https://www.facebook.com/JCM-Construction-and-Design-103311794806120/">
+                  <img class="socialImg" src="Images/facebook.png" alt="fb">
+                </a>
+              </div>
+            </div>
+            <div class="footer-section links">
+              <h2>Quick Links</h2>
+              <br>
+              <ul>
+                <a class="FootLink" href="AboutUs.html"><li>About Us</li></a>
+                <a class="FootLink" href="Projects.html"><li>Projects</li></a>
+                <a class="FootLink" href="Services.html"><li>Services</li></a>
+                <a class="FootLink" href="Contact.html"><li>Contact Us</li></a>
+              </ul>
+            </div>
+            <div class="footer-section contactform">
+              <h2>Contact Us</h2>
+              <form id="contact-form" class="txtb" method="POST" action="contact-form-handler.php">
+                <label>Name:</label>
+                <input type="text" name="name" class="form-control" required>
+                <br>
+                <label>Email:</label>
+                <input type="email" name="email" class="form-control" required>
+                <br>
+                <label>Message:</label>
+                <textarea name="message" class="form-control" row="4" required></textarea>
+                <br>
+                <input type="submit" class="form-control submit" value="SEND">
+              </form>
+
+          <div class="footer-bottom">
+            &copy; 2021 JCM Construction and Design | Website designed by Janine Jimenez
+          </div>
+        </div>
+
+</body>
