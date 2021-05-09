@@ -750,6 +750,7 @@ form .form-submit-button:hover {
 
 .projectdiv {
   height         : 750px;
+  border: 1px solid red;
   position       : relative;
   display        : flex;
   padding-top    : 10vh;
