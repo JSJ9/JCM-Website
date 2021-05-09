@@ -750,6 +750,7 @@ form .form-submit-button:hover {
 
 .projectdiv {
   height         : 750px;
+  border: 1px solid white;
   position       : relative;
   display        : flex;
   padding-top    : 10vh;
@@ -1048,7 +1049,6 @@ form .form-submit-button:hover {
 .arrow {
   width     : 13px;
   height    : 13px;
-  display   : inline-block;
   position  : relative;
   bottom    : -5px;
   left      : -10px;
