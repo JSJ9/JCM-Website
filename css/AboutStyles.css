@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* designs the nav bar */
 nav {
   display: flex;
   justify-content: space-around;
@@ -11,16 +12,16 @@ nav {
   min-height: 8vh;
   background-color: #f2f2f2;
 }
+
 body {
   margin: 0;
-  color:  #403A36;
+  color: #f1f1f1;
   font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   padding-top: 50px;
   font-family: 'Poppins', sans-serif;
-  color: #262B8C;
   text-align: center;
   font-size: 100px;
 }
@@ -29,17 +30,22 @@ h2 {
   font-family: 'Poppins', sans-serif;
 }
 
-li {
-  margin-bottom: 10px;
+h3 {
+  margin: 0;
 }
 
-ul {
-  padding-left: 40px;
+h4 {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .logo-img {
   height: 180px;
   width: 180px;
+}
+
+.h21 {
+  color: #2b2899;
 }
 
 .nav-links {
@@ -49,12 +55,12 @@ ul {
   font-family: 'Poppins', sans-serif;
 }
 
-.nav-links li{
+.nav-links li {
   list-style: none;
 }
 
-.nav-links a{
-  color: #1D1B59;
+.nav-links a {
+  color: #2b2899;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
@@ -72,21 +78,21 @@ ul {
   margin: 5px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:1024px) {
   .nav-links {
     display: flex;
     justify-content: space-around;
     width: 50%;
   }
-
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 93vh;
     top: 19vh;
@@ -118,12 +124,12 @@ ul {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-
 
 /* THIS PART CONTROLS THE LINE ANIMATION IN NAV BAR */
 .hover {

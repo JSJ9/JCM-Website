@@ -78,7 +78,7 @@ h4 {
   margin: 5px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:1024px) {
   .nav-links {
     display: flex;
     justify-content: space-around;
@@ -86,13 +86,13 @@ h4 {
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
   body {
     overflow-x: hidden;
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 93vh;
     top: 19vh;
