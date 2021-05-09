@@ -407,7 +407,7 @@ h4 {
   z-index   : -1;
 }
 
-/* Start of reviews block */
+/* Start of reviews block IN INDEX PAGE */
 .yellowStar {
   width : 30px;
   height: 30px;
@@ -438,23 +438,26 @@ h4 {
 }
 
 .Projects-Block {
-  height          : 900px;
+  height          : 600px;
   width           : 100%;
   background-color: #f1f1f1;
 }
 
 .ProjectImage {
-  max-width: 60%;
-  height   : auto;
+  max-width  : 65%;
+  height     : auto;
 }
 
 .ProjectImageBlock {
   position      : absolute;
-  padding-bottom: 100px;
-  padding-left  : 25vh;
-  padding-top   : 15vh;
-  float         : left;
-  padding-right : 50%;
+  width         : 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height        : 600px;
+  padding-bottom: 10vh;
+  padding-top   : 10vh;
 }
 
 .Project-Text-Block {
@@ -1049,6 +1052,7 @@ form .form-submit-button:hover {
 .arrow {
   width     : 13px;
   height    : 13px;
+  display   : inline-block;
   position  : relative;
   bottom    : -5px;
   left      : -10px;
