@@ -417,8 +417,9 @@ h4 {
   text-align   : center;
   margin-top   : 30px;
   padding-right: 200px;
+  position     : relative;
   padding-left : 200px;
-  height       : 600px;
+  height       : 700px;
 }
 
 .review-text {
@@ -437,7 +438,7 @@ h4 {
 }
 
 .Projects-Block {
-  height          : 600px;
+  height          : 900px;
   width           : 100%;
   background-color: #f1f1f1;
 }
@@ -748,10 +749,10 @@ form .form-submit-button:hover {
 }
 
 .projectdiv {
-  height         : 500px;
+  height         : 750px;
   position       : relative;
   display        : flex;
-  padding        : 0;
+  padding-top    : 10vh;
   margin         : 0;
   display        : flex;
   justify-content: center;
