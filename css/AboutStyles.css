@@ -1,29 +1,29 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin    : 0;
+  padding   : 0;
   box-sizing: border-box;
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
+  display         : flex;
+  justify-content : space-around;
+  align-items     : center;
+  min-height      : 8vh;
   background-color: #f2f2f2;
 }
+
 body {
-  margin: 0;
-  color:  #403A36;
+  margin     : 0;
+  color      : #403A36;
   font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   padding-top: 50px;
   font-family: 'Poppins', sans-serif;
-  color: #2b2899;
-  text-align: center;
-  color: #2b2899;
-  font-size: 100px;
+  color      : #2b2899;
+  text-align : center;
+  font-size  : 100px;
 }
 
 h2 {
@@ -38,66 +38,84 @@ ul {
   padding-left: 40px;
 }
 
+hr {
+  border-style    : none;
+  border-top-style: dotted;
+  border-color    : #403A36;
+  margin          : auto;
+  display         : flex;
+  justify-content : center;
+  align-content   : center;
+  align-items     : center;
+  border-width    : 5px;
+  width           : 5%;
+}
+
 .logo-img {
   height: 180px;
-  width: 180px;
+  width : 180px;
 }
 
 .nav-links {
-  display: flex;
+  display        : flex;
   justify-content: space-around;
-  width: 40%;
-  font-family: 'Poppins', sans-serif;
+  width          : 40%;
+  font-family    : 'Poppins', sans-serif;
 }
 
-.nav-links li{
+.nav-links li {
   list-style: none;
 }
 
-.nav-links a{
-  color: #1D1B59;
+.nav-links a {
+  color          : #2b2899;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight    : bold;
+  font-size      : 20px;
 }
 
 .burger {
   display: none;
-  cursor: pointer;
+  cursor : pointer;
+  z-index: 999;
 }
 
 .burger div {
-  width: 25px;
-  height: 3px;
+  width           : 25px;
+  height          : 3px;
   background-color: #2b2899;
-  margin: 5px;
+  margin          : 5px;
+  z-index         : 999;
+  transition: all 0.5s ease;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:1024px) {
   .nav-links {
-    display: flex;
+    display        : flex;
     justify-content: space-around;
-    width: 50%;
+    width          : 50%;
   }
 
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
   body {
     overflow-x: hidden;
   }
+
   .nav-links {
-    position: absolute;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
+    position        : fixed;
+    right           : 0;
+    height          : 100%;
+    top             : 0;
     background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    z-index         : 900;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    width           : 100%;
+    transform       : translateX(100%);
+    transition      : transform 0.5s ease-in;
   }
 
   .nav-links li {
@@ -107,6 +125,7 @@ ul {
   .burger {
     display: block;
   }
+
 }
 
 .nav-active {
@@ -115,45 +134,59 @@ ul {
 
 @keyframes navLinkFade {
   from {
-    opacity: 0;
+    opacity  : 0;
     transform: translateX(50px);
   }
+
   to {
-    opacity: 1;
+    opacity  : 1;
     transform: translateX(0);
   }
 }
 
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 
 /* THIS PART CONTROLS THE LINE ANIMATION IN NAV BAR */
 .hover {
-  display: inline-block;
+  display : inline-block;
   position: relative;
 }
 
 .hover::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
+  content         : '';
+  position        : absolute;
+  width           : 100%;
+  transform       : scaleX(0);
+  height          : 2px;
+  bottom          : 0;
+  left            : 0;
   background-color: #2b2899;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition      : transform 0.25s ease-out;
 }
 
 .hover:hover::before {
-  transform: scaleX(1);
+  transform       : scaleX(1);
   transform-origin: bottom left;
 }
 
 .textLeft {
-  text-align: center;
-  padding-left: 50px;
+  text-align   : center;
+  padding-left : 50px;
   padding-right: 50px;
-  padding-top: 100px;
+  padding-top  : 100px;
 }
 
 
@@ -161,71 +194,73 @@ ul {
 
 .imgAbout {
   height: 400px;
-  width: auto;
+  width : auto;
 }
 
 .imageBlock {
-  height: 400px;
-  width: 100%;
-  display: flex;
+  height         : 400px;
+  width          : 100%;
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  align-items    : center;
+  align-content  : center;
 }
 
 .Paragraphs {
   padding-right: 30%;
-  padding-left: 30%;
+  padding-left : 30%;
 }
+
+
 
 /* this is for the gold stars in the goals section */
 
 .goals {
-  width: 100%;
-  height: 300px;
+  width        : 100%;
+  height       : 300px;
   margin-bottom: 100px;
-  padding: 0;
-  margin: 0;
+  padding      : 0;
+  margin       : 0;
 }
 
 
 .starGoal {
-  width: 100px;
-  height: 100px;
+  width        : 100px;
+  height       : 100px;
   margin-bottom: 10px;
 }
 
 .goal1 {
-  width: 20%;
-  left: 10%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  width         : 20%;
+  left          : 10%;
+  position      : absolute;
+  display       : flex;
+  align-items   : center;
+  text-align    : center;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom : 100px;
 }
 
 .goal2 {
-  width: 20%;
-  position: absolute;
-  left: 40%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  width         : 20%;
+  position      : absolute;
+  left          : 40%;
+  display       : flex;
+  align-items   : center;
+  text-align    : center;
   flex-direction: column;
-  margin-bottom: 10%;
+  margin-bottom : 10%;
 }
 
 .goal3 {
-  width: 20%;
-  position: absolute;
-  left: 70%;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  width         : 20%;
+  position      : absolute;
+  left          : 70%;
+  display       : flex;
+  align-items   : center;
+  text-align    : center;
   flex-direction: column;
-  margin-bottom: 100px;
+  margin-bottom : 100px;
 }
 
 
@@ -236,105 +271,107 @@ ul {
 
 .footer {
   background-color: #302C42;
-  height: 310px;
-  position: relative;
-  color: white;
+  height          : 310px;
+  position        : relative;
+  color           : white;
 }
 
 .footer .footer-bottom {
   background-color: #37334c;
-  color:#b2b8cc;
-  height: 40px;
-  text-align: center;
-  position: absolute;
-  bottom: 0px;
-  top: 310px;
-  left: 0px;
-  padding-top: 10px;
-  width: 100%;
+  color           : #b2b8cc;
+  height          : 40px;
+  text-align      : center;
+  position        : absolute;
+  bottom          : 0px;
+  top             : 310px;
+  left            : 0px;
+  padding-top     : 10px;
+  width           : 100%;
 }
 
 .footer .footer-content {
-  height: 350px;
+  height : 350px;
   display: flex;
 }
 
 .footer .footer-content .footer-section {
-  flex: 1;
-  padding: 10px;
+  flex       : 1;
+  padding    : 10px;
   padding-top: 25px;
 }
 
 /*general infor footer section*/
 
 .footerimage {
-  height:100px;
-  width: 100px;
+  height: 100px;
+  width : 100px;
 }
 
 .mail-icon {
   height: 15px;
-  width: 20px;
+  width : 20px;
 }
 
 .phone-icon {
   height: 20px;
-  width: 20px;
+  width : 20px;
 }
 
 .socialImg {
   height: 40px;
-  width: 40px;
+  width : 40px;
 }
+
 /* Quick Links */
 
 .FootLink {
   text-decoration: none;
-  color: #f2f2f2;
+  color          : #f2f2f2;
 }
 
 /*This is the contact page portion of the header */
 
 .txtb {
-  margin: 0;
-  padding-top: 10px;
+  margin       : 0;
+  padding-top  : 10px;
   padding-right: 20px;
 }
 
 .txtb label {
-  display: block;
-  text-align: left;
-  color: #f1f1f1;
+  display       : block;
+  text-align    : left;
+  color         : #f1f1f1;
   text-transform: uppercase;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+  font-size     : 14px;
+  font-family   : 'Montserrat', sans-serif;
   letter-spacing: 1px;
 }
 
-.txtb input,.txtb textarea{
-  width: 100%;
-  border: none;
-  background: none;
+.txtb input,
+.txtb textarea {
+  width        : 100%;
+  border       : none;
+  background   : none;
   border-bottom: 1px solid #b2b8cc;
   margin-bottom: 7px;
-  outline: none;
-  color: #f1f1f1;
-  font-size: 15px;
-  margin-top: 6px;
-  font-family:sans-serif;
+  outline      : none;
+  color        : #f1f1f1;
+  font-size    : 15px;
+  margin-top   : 6px;
+  font-family  : sans-serif;
 }
 
-form .submit{
-  display: block;
-  background: #2182BF;
-  font-family: 'Montserrat', sans-serif;
-  height: 30px;
-  border: none;
-  color: white;
+form .submit {
+  display       : block;
+  background    : #2182BF;
+  font-family   : 'Montserrat', sans-serif;
+  height        : 30px;
+  border        : none;
+  color         : white;
   text-transform: uppercase;
 }
 
 form .submit:hover {
   background: #076bab;
-  cursor: pointer;
+  cursor    : pointer;
 }
